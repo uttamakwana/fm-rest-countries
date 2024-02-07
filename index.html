@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST Countries API with color switcher</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer type="module"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-section">
+      <div class="wrapper header">
+        <h1>Where in the world?</h1>
+        <button id="theme-btn">🌙 Dark Mode</button>
+      </div>
+    </header>
+
+    <!-- Seach bar -->
+    <section class="search-section">
+      <div class="wrapper search">
+        <input
+          type="search"
+          id="search"
+          placeholder="🔍 Search for a country"
+        />
+        <select name="region" id="region">
+          <option disabled selected>Filter by region</option>
+          <option>Africa</option>
+          <option>America</option>
+          <option>Asia</option>
+          <option>Europe</option>
+          <option>Oceania</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Countries -->
+    <section class="country-section">
+      <ul class="country-list wrapper"></ul>
+    </section>
+
+    <div class="country-details"></div>
+    <div class="overlay"></div>
+  </body>
+</html>
